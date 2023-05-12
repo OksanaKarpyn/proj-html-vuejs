@@ -1,9 +1,8 @@
 <script>
-import MainDream from './MainDream.vue';
 export default {
-    name: 'MainComp',
+    name: 'ComponetnEmpty',
     components: {
-        MainDream
+
     },
     data() {
         return {
@@ -11,7 +10,5 @@ export default {
     }
 }
 </script>
-<template>
-    <MainDream></MainDream>
-</template>
+<template></template>
 <style lang="scss" scoped></style>

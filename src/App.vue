@@ -1,6 +1,7 @@
 <script >
 import { store } from './store';
 import HeaderComp from './components/HeaderComp.vue';
+import MainComp from './components/MainComp.vue';
 export default {
   name: 'AppVue',
   data() {
@@ -10,13 +11,20 @@ export default {
   },
   components: {
     HeaderComp,
+    MainComp,
   }
 }
 
 </script>
 
 <template>
-  <HeaderComp></HeaderComp>
+  <header>
+    <HeaderComp></HeaderComp>
+  </header>
+  <main>
+    <MainComp></MainComp>
+  </main>
+  <footer></footer>
 </template>
 
 <style lang="scss">

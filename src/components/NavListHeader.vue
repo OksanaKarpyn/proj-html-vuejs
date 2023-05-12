@@ -30,18 +30,15 @@ div {
         margin-bottom: 0px;
 
         li {
-            font-size: .6rem;
+            color: #7B7791;
+            // font-size: .6rem;
 
             select {
                 background-color: transparent;
 
                 option {
-                    background-color: #523B5D;
+                    background-color: #e7fdf6;
 
-                    &:hover {
-                        background-color: #FB9000;
-
-                    }
                 }
             }
         }

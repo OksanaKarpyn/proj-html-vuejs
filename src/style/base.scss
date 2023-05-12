@@ -2,11 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 ul{
     list-style-type: none;
-    padding-left: 1rem;
+    padding-left: .8rem;
 }
 li{
     text-transform:capitalize;
+    color: #7B7791;
 }
