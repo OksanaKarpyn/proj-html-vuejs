@@ -1,9 +1,11 @@
 <script>
 import DreamList from './DreamList.vue';
+import DreamContent from './DreamContent.vue';
 export default {
     name: 'MainDream',
     components: {
-        DreamList
+        DreamList,
+        DreamContent,
     },
     data() {
         return {
@@ -38,12 +40,15 @@ export default {
 <template>
     <main>
         <div class="container mt-5">
-            <div class="main-header-dream mt-3 gap-2">
+            <div class="main-header-dream mt-3">
                 <p>START LEARNING CODING LANGUAGES</p>
                 <h2>Build Your Dream<span>TODAY</span></h2>
             </div>
             <div class=" cards d-flex my-5">
                 <DreamList v-for="(item, index) in listDream" :key="index" :propsListDream="item"></DreamList>
+            </div>
+            <div class="">
+                <DreamContent></DreamContent>
             </div>
         </div>
     </main>
@@ -68,6 +73,4 @@ export default {
         }
     }
 }
-
-.cards {}
 </style>

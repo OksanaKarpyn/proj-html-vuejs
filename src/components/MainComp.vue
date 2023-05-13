@@ -1,9 +1,11 @@
 <script>
 import MainDream from './MainDream.vue';
+import DreamInfo from './DreamInfo.vue';
 export default {
     name: 'MainComp',
     components: {
-        MainDream
+        MainDream,
+        DreamInfo
     },
     data() {
         return {
@@ -12,6 +14,11 @@ export default {
 }
 </script>
 <template>
-    <MainDream></MainDream>
+    <div>
+        <MainDream></MainDream>
+    </div>
+    <div>
+        <DreamInfo></DreamInfo>
+    </div>
 </template>
 <style lang="scss" scoped></style>

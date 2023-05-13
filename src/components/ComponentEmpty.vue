@@ -1,8 +1,7 @@
 <script>
 export default {
-    name: 'ComponetnEmpty',
+    name: 'Componentempty',
     components: {
-
     },
     data() {
         return {
