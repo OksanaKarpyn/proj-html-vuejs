@@ -43,7 +43,7 @@ export default {
 
             <div class="d-flex mx-1">
                 <i class="fa-solid fa-cart-shopping mx-1"></i>
-                <i class="fa-solid fa-user ms-1"></i>
+                <i class="fa-regular fa-user ms-1"></i>
             </div>
             <div class="d-flex bg-white">
                 <input type="text" class="form-control ms-2 border-0 p-1 rounted" placeholder="Search"
