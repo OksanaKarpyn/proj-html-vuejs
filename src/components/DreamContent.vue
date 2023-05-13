@@ -82,7 +82,13 @@ export default {
     justify-content: space-between;
     align-items: center;
 
-    .img-container {}
+    .img-container {
+        background-image: url(../../public/underlay-shape-lilla.svg);
+        background-size: 380px 650px;
+        background-repeat: repeat-y;
+
+        img {}
+    }
 
     .body {
         max-width: 600px;

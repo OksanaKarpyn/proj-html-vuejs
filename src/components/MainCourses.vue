@@ -74,7 +74,7 @@ export default {
             <div class="main-header-courses container">
                 <p>CHOOSE WHERE YOU'D LIKE TO BEGIN</p>
                 <h2>Latest Featured<span>Courses</span></h2>
-                <div class="d-flex flex-wrap gap-4 justify-content-center">
+                <div class="d-flex flex-wrap gap-4 justify-content-center py-4">
                     <CoursesCard v-for="(item, index) in listCourse" :key="index" :propsListCourse="item"></CoursesCard>
                 </div>
             </div>
@@ -87,7 +87,7 @@ export default {
         </div>
         <div class="onda">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill="#F5F5F5" fill-opacity="1"
+                <path fill="#F1F1F1" fill-opacity="1"
                     d="M0,32L120,53.3C240,75,480,117,720,112C960,107,1200,53,1320,26.7L1440,0L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z">
                 </path>
             </svg>
@@ -111,7 +111,7 @@ main {
 
             p {
                 letter-spacing: 1px;
-                font-size: .7rem;
+                font-size: .9rem;
                 text-align: center;
             }
 
@@ -120,6 +120,8 @@ main {
                 text-align: center;
                 color: #3F3A64;
                 font-weight: bold;
+                font-size: 2.8rem;
+                padding-bottom: 30px;
 
                 span {
                     color: #20AD96;

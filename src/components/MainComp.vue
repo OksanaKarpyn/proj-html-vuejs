@@ -2,12 +2,14 @@
 import MainDream from './MainDream.vue';
 import DreamInfo from './DreamInfo.vue';
 import MainCourses from './MainCourses.vue';
+import MainLearn from './MainLearn.vue';
 export default {
     name: 'MainComp',
     components: {
         MainDream,
         DreamInfo,
         MainCourses,
+        MainLearn,
     },
     data() {
         return {
@@ -24,6 +26,9 @@ export default {
     </div>
     <div>
         <MainCourses></MainCourses>
+    </div>
+    <div>
+        <MainLearn></MainLearn>
     </div>
 </template>
 <style lang="scss" scoped></style>
