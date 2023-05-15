@@ -1,12 +1,15 @@
 <script>
 import CoursesCard from './CoursesCard.vue';
+import CoursesCardBis from './CoursesCardBis.vue';
 export default {
     name: 'MainCourses',
     components: {
         CoursesCard,
+        CoursesCardBis,
     },
     data() {
         return {
+            showList: false,
             listCourse: [
                 {
                     img: '../../public/images/course-02-480x298.jpg',
@@ -62,7 +65,63 @@ export default {
                     num1: '14',
                     num2: '76',
                 },
+            ],
+            listCourseBis: [
+                {
+                    img: '../../public/images/course-02-480x298.jpg',
+                    ava: '../../public/images/73ee246daf47502812ccefc84bf02898.jpeg',
+                    name: 'Blanche Fields',
+                    title: 'Learning to Write as a Professional Author',
+                    num1: '20',
+                    num2: '50',
+                },
+                {
+                    img: '../../public/images/stock-full-hd-03-480x298.jpg',
+                    ava: '../../public/images/d0d504142acfde820eef2f11feea6253.jpeg',
+                    name: 'Maggie Strickland',
+                    title: 'Customer-centric Info-Tech Strategies',
+                    num1: '24',
+                    num2: '769',
+                },
+                {
+                    img: '../../public/images/stock-full-hd-04-480x298.jpg',
+                    ava: '../../public/images/d0d504142acfde820eef2f11feea6253.jpeg',
+                    name: 'Maggie Strickland',
+                    title: 'Open Programming Courses for Everyone: Python',
+                    num1: '17',
+                    num2: '62',
+                },
+                {
+                    img: '../../public/images/stock-full-hd-06-480x298.jpg',
+                    ava: '../../public/images/73ee246daf47502812ccefc84bf02898.jpeg',
+                    name: 'Blanche Fields',
+                    title: 'Academic Listening and Note-taking for Beginners',
+                    num1: '14',
+                    num2: '67',
+                },
+                {
+                    img: '../../public/images/course-featured-image-01-480x298.jpg',
+                    ava: '../../public/images/73ee246daf47502812ccefc84bf02898.jpeg',
+                    name: 'Blanche Fields',
+                    title: 'Master jQuery in a Short Period of Time',
+                    num1: '6',
+                    num2: '51',
+                },
+                {
+                    img: '../../public/images/stock-full-hd-05-480x298.jpg',
+
+                    ava: '../../public/images/73ee246daf47502812ccefc84bf02898.jpeg',
+                    name: 'Blanche Fields',
+                    title: 'Introduction to Javascript for Beginners',
+                    num1: '14',
+                    num2: '76',
+                },
             ]
+        }
+    },
+    methods: {
+        toggleList() {
+            this.showList = !this.showList
         }
     }
 }
@@ -76,10 +135,14 @@ export default {
                 <h2>Latest Featured<span>Courses</span></h2>
                 <div class="d-flex flex-wrap gap-4 justify-content-center py-4">
                     <CoursesCard v-for="(item, index) in listCourse" :key="index" :propsListCourse="item"></CoursesCard>
+                    <div class="d-flex flex-wrap gap-4 justify-content-center py-4" v-if="showList">
+                        <CoursesCardBis v-for="(item, index) in listCourseBis" :key="index" :propsListCourse="item">
+                        </CoursesCardBis>
+                    </div>
                 </div>
             </div>
             <div class="d-flex">
-                <button class="btn p-3 px-5  mt-3">
+                <button class="btn p-3 px-5  mt-3" @click="toggleList">
                     <span class="py-3 px-2"><strong>View all courses</strong></span>
                     <i class="fa-solid fa-arrow-right"></i>
                 </button>
