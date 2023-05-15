@@ -4,7 +4,7 @@ import DreamInfo from './DreamInfo.vue';
 import MainCourses from './MainCourses.vue';
 import MainLearn from './MainLearn.vue';
 import MainEvents from './MainEvents.vue';
-
+import MainTeam from './MainTeam.vue';
 export default {
     name: 'MainComp',
     components: {
@@ -13,6 +13,7 @@ export default {
         MainCourses,
         MainLearn,
         MainEvents,
+        MainTeam,
     },
     data() {
         return {
@@ -35,6 +36,9 @@ export default {
     </div>
     <div>
         <MainEvents></MainEvents>
+    </div>
+    <div>
+        <MainTeam></MainTeam>
     </div>
 </template>
 <style lang="scss" scoped></style>
