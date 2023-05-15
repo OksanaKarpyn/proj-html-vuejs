@@ -5,6 +5,7 @@ import MainCourses from './MainCourses.vue';
 import MainLearn from './MainLearn.vue';
 import MainEvents from './MainEvents.vue';
 import MainTeam from './MainTeam.vue';
+import Footer from './Footer.vue';
 export default {
     name: 'MainComp',
     components: {
@@ -14,6 +15,7 @@ export default {
         MainLearn,
         MainEvents,
         MainTeam,
+        Footer,
     },
     data() {
         return {
@@ -39,6 +41,9 @@ export default {
     </div>
     <div>
         <MainTeam></MainTeam>
+    </div>
+    <div>
+        <Footer></Footer>
     </div>
 </template>
 <style lang="scss" scoped></style>

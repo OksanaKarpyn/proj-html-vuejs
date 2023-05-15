@@ -40,7 +40,7 @@ export default {
                     discount: '$26',
                     ava: '../../public/images/73ee246daf47502812ccefc84bf02898.jpeg',
                     name: 'Blanche Fields',
-                    title: 'Academic Listening and Note-taking',
+                    title: 'Academic Listening and Note-taking for Beginners',
                     num1: '14',
                     num2: '67',
                 },
